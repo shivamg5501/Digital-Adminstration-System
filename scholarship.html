@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	body 
+		{
+    	 background-image: url(./scholarship.jpg);
+    	 opacity: 90%;
+  		 backdrop-filter: blur(5px);
+ 		 height: 100%; 
+  		 background-repeat: no-repeat;
+ 		 background-attachment: fixed;
+
+  
+
+		font-family: Arial, Helvetica, sans-serif;
+		margin-left:25%;
+		margin-right:25%;
+		border: 1px solid #000000;
+		margin-bottom: 5px;
+		padding: 0px 15px 0 15px;
+		}
+	input[type=text], input[type=password] 
+		{
+		width: 97%;
+		padding: 10px;
+		margin: 5px 0 22px 0;
+		display: inline-block;
+		border: none;
+		background: #F5F5F5;
+		}
+	hr 
+		{
+		border: 1px solid #e6e6e6;
+		margin-bottom: 5px;
+		}
+	.registerbutton
+		{
+		background-color: #29a329;
+		color: white;
+		padding: 15px 20px;
+		margin: 10px 0px;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+			}
+	
+
+</style>
+</head>
+<body>
+	<form action="scholarship.php" method="POST">
+		<h1>SCHOLARSHIP FORM </h1>
+		<p>Scholarship form of IIIT Nagpur</p>
+		<hr>
+		
+
+		<label for="name"><b>Name</b></label>
+		<input type="text" placeholder="Enter Your Name" name="name" required><br>
+		 
+        <label for="enroll"><b>Enrollment Number</b></label>
+		<input type="text" placeholder="Enter Your Enrollment Number" name="enroll" required><br>
+		
+		<label for="number"><b>Contact No.</b></label>
+		<input type="text" placeholder="Enter Your Contact No." name="number" required><br>
+		
+		<label for="email"><b>Email</b></label> 
+		<input type="text" placeholder="Enter Your E-mail" name="email" required><br>
+
+		<label for="semester"><b>Current Semester</b></label>
+		<input type="text" placeholder="Enter the current semester.." name="semester" required><br>
+		
+        <label for="cgpa"><b>CGPA </b></label>
+		<input type="text" placeholder="Enter Your CGPA " name="cgpa" required><br>
+		
+		<label for="fname"><b>Father Name</b></label>
+		<input type="text" placeholder="Enter Your Father Name" name="fname" required><br>
+		
+        <label for="fnumber"><b>Contact No of Father.</b></label>
+		<input type="text" placeholder="Enter Your Father Contact No." name="fnumber" required><br>
+		
+        <label for="foccupation"><b>father occupation</b></label>
+		<input type="text" placeholder="Enter Your Father occupation Details" name="foccupation" required><br>
+		
+        <label for="annualincome"><b>Annual Family Income</b></label>
+		<input type="text" placeholder="Enter your Annual family income" name="annualincome" required><br>
+		
+        <hr>
+
+		<button type="submit" class="registerbutton" value ="submit" name="submit">SUBMIT</button>
+		
+  
+		
+		
+	</form>
+
+
+</body>
+</html>

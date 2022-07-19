@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	body 
+		{
+
+		 background-image: url(./noc.jpg);
+         background-size: 100%;
+    	 opacity: 90%;
+  		 backdrop-filter: blur(5px);
+ 		 height: 100%;
+  		 background-repeat: no-repeat;
+ 		 background-attachment: fixed;
+
+
+		font-family: Arial, Helvetica, sans-serif;
+		margin-left:25%;
+		margin-right:25%;
+		border: 1px solid #000000;
+		margin-bottom: 5px;
+		padding: 0px 15px 0 15px;
+		}
+	input[type=text], input[type=password] 
+		{
+		width: 97%;
+		padding: 10px;
+		margin: 5px 0 22px 0;
+		display: inline-block;
+		border: none;
+		background: #F5F5F5;
+		}
+	hr 
+		{
+		border: 1px solid #e6e6e6;
+		margin-bottom: 5px;
+		}
+	.registerbutton
+		{
+		background-color: #29a329;
+		color: white;
+		padding: 15px 20px;
+		margin: 10px 0px;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+			}
+	
+
+</style>
+</head>
+<body>
+	<form action="noc.php" method="POST">
+		<h1>No Objection Certificate </h1>
+
+		<p> NOC is a no-objection certificate which you need to procure from your university, if required for admission in another regular degree university.</p>
+
+		<hr>
+		
+
+		<label for="name"><b>Name</b></label>
+		<input type="text" placeholder="Enter Your Name" name="name" required><br>
+		
+		<label for="enroll"><b>Enrollment Number</b></label>
+		<input type="text" placeholder="Enter Your Enrollment Number" name="enroll" required><br>
+		
+		<label for="number"><b>Contact No.</b></label>
+		<input type="text" placeholder="Enter Your Contact No." name="number" required><br>
+		
+		<label for="email"><b>Email</b></label> 
+		<input type="text" placeholder="Enter Your E-mail" name="email" required><br>
+
+
+		
+		<label for="division"><b>Division in 12th Marksheet</b></label>
+		<input type="text" placeholder="Division" name="division" required><br>
+		
+
+		<label for="pass"><b>Pass Out Year</b></label>
+		<input type="text" placeholder="year" name="year" required><br><br>
+		
+        <label for="DOB"><b>Date Of Birth</b></label>
+		<input type="date" placeholder="DOB" name="DOB" required><br> <br>
+
+		<label for="fname"><b>Father Name</b></label>
+		<input type="text" placeholder="Father name" name="fname" required><br>
+
+		<label for="number"><b>Contact No.</b></label>
+		<input type="text" placeholder="Enter Father Contact No." name="number" required><br>
+		
+        <hr>
+		<input type="checkbox" name="check" value="check">
+  <label for="check" style="color: #e6e6e6;">I filled above information with my consent.</label><br>
+		<p></p>
+
+		<button type="submit" class="registerbutton" value ="submit" name="submit">SUBMIT</button>
+		
+  
+		
+	</form>
+
+
+</body>
+</html>

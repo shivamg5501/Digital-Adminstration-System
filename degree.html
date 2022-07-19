@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	body 
+		{
+    	 background-image: url(./degree.jpg);
+         background-size: 100%;
+    	 opacity: 90%;
+  		 backdrop-filter: blur(5px);
+ 		 height: 100%;
+  		 background-repeat: no-repeat;
+ 		 background-attachment: fixed;
+
+  
+
+		font-family: Arial, Helvetica, sans-serif;
+		margin-left:25%;
+		margin-right:25%;
+		border: 1px solid #000000;
+		margin-bottom: 5px;
+		padding: 0px 15px 0 15px;
+		}
+	input[type=text], input[type=password] 
+		{
+		width: 97%;
+		padding: 10px;
+		margin: 5px 0 22px 0;
+		display: inline-block;
+		border: none;
+		background: #F5F5F5;
+		}
+	hr 
+		{
+		border: 1px solid #e6e6e6;
+		margin-bottom: 5px;
+		}
+	.registerbutton
+		{
+		background-color: #29a329;
+		color: white;
+		padding: 15px 20px;
+		margin: 10px 0px;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+			}
+	
+
+</style>
+</head>
+<body>
+	<form action="degree.php" method="POST">
+		<h1>Application Form For Degree </h1>
+		<p>Degree Certificate is to apply for any job, license registration, and admission for further education.</p>
+		<hr>
+		
+
+		<label for="name"><b>Name</b></label>
+		<input type="text" placeholder="Enter Your Name" name="name" required><br>
+		 
+        <label for="enroll"><b>Enrollment Number</b></label>
+		<input type="text" placeholder="Enter Your Enrollment Number" name="enroll" required><br>
+		
+		<label for="number"><b>Contact No.</b></label>
+		<input type="text" placeholder="Enter Your Contact No." name="number" required><br>
+		
+		<label for="email"><b>Email</b></label> 
+		<input type="text" placeholder="Enter Your E-mail" name="email" required><br>
+
+		<label for="semester"><b>Branch</b></label>
+		<input type="text" placeholder="Enter your Branch" name="semester" required><br>
+		
+        <hr>
+
+		<button type="submit" class="registerbutton" value ="submit" name="submit">SUBMIT</button>
+		
+  
+		
+		
+	</form>
+
+
+</body>
+</html>

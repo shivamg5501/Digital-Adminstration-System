@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	body 
+		{
+		background-image: url(./reexam.jpg);
+    	opacity: 90%;
+   		backdrop-filter: blur(70px);
+  		height: 100%; 
+  		background-repeat: no-repeat;
+  		background-attachment: fixed;
+
+
+		font-family: Arial, Helvetica, sans-serif;
+		margin-left:25%;
+		margin-right:25%;
+		border: 1px solid #000000;
+		margin-bottom: 5px;
+		padding: 0px 15px 0 15px;
+		}
+	input[type=text], input[type=password] 
+		{
+		width: 97%;
+		padding: 10px;
+		margin: 5px 0 22px 0;
+		display: inline-block;
+		border: none;
+		background: #F5F5F5;
+		}
+	hr 
+		{
+		border: 1px solid #e6e6e6;
+		margin-bottom: 5px;
+		}
+	.Submit
+		{
+		background-color: #29a329;
+		color: white;
+		padding: 15px 20px;
+		margin: 10px 0px;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+			}
+	
+
+</style>
+</head>
+<body>
+	<form action="reexam.php" method="POST">
+		<h1>RE-EXAMINATION FORM </h1>
+		<p>Applying for re-exam</p>
+		<hr>
+		
+
+		<label for="name"><b>Name</b></label>
+		<input type="text" placeholder="Enter Your Name" name="name" required><br>
+		 
+        <label for="enroll"><b>Enrollment Number</b></label>
+		<input type="text" placeholder="Enter Your Enrollment Number" name="enroll" required><br>
+
+		<label for="number"><b>Contact Number</b></label>
+		<input type="text" placeholder="Enter Contact Number" name="number" required><br>
+		
+		<label for="number"><b>Choose Semester.</b></label>
+		<select name="cars" id="cars">
+			<option value="1 Semester">1st  Semester</option>
+			<option value="2 Semester">2nd  Semester</option>
+			<option value="3 Semester">3rd  Semester</option>
+			<option value="4 Semester">4th  Semester</option>
+			<option value="5 Semester">5th  Semester</option>
+			<option value="6 Semester">6th  Semester</option>
+			<option value="7 Semester">7th  Semester</option>
+		  </select>
+		  <br><br>
+		
+		<label for="email"><b>Email</b></label> 
+		<input type="text" placeholder="Enter Your E-mail" name="email" required><br>
+
+		<label for="pwd"><b>Subject in which you are applying for re-exam</b></label>
+		<input type="text" placeholder="Enter Subject" name="psw" required><br>
+
+		<textarea rows="4" cols="50" name="comment" form="usrform">
+		Enter Reason for re-exam...</textarea>
+		<hr>
+
+		<button type="submit" class="Submit" value ="submit" name="submit">Submit</button>
+		
+		
+	</form>
+
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+body {
+    background-image: url(./admin_data.jpg);
+    opacity: 90%;
+    backdrop-filter: blur(5px);
+  height: 100%; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+
+
+  }
+
+.column {
+    float: left;
+    width: 100%;
+    padding: 25px;
+    height: 50%;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  a:link {
+    color: hotpink;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: green;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: red;
+    text-decoration: underline;
+  }
+
+
